@@ -37,36 +37,6 @@ const pesquisarCep = async() => {
 
 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
 
-// function mascara(i){
-   
-//     var v = i.value;
-    
-//     if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-//        i.value = v.substring(0, v.length-1);
-//        return;
-//     }
-    
-//     i.setAttribute("maxlength", "14");
-//     if (v.length == 3 || v.length == 7) i.value += ".";
-//     if (v.length == 11) i.value += "-";
- 
-// }
-
-// function mascara2(i){
-   
-//     var v = i.value;
-    
-//     if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-//        i.value = v.substring(0, v.length-1);
-//        return;
-//     }
-    
-//     i.setAttribute("maxlength", "12");
-//     if (v.length == 2 || v.length == 6) i.value += ".";
-//     if (v.length == 10) i.value += "-";
- 
-// }
-
 const Formulario = () => {
     let form = {
         nome: document.getElementById('nomeCompleto').value,
@@ -117,13 +87,24 @@ const criarCandidato = async (candidato) => {
 
 function check_form() {
 
-    var valid = true;
-    if (!validacaoCPF() || !buscaCEP()) { valid = false; }
+    let nome = document.getElementById('nomeCompleto').value;
+    let cargo = document.getElementById('cargo').value;
+    let dataDeNascimento = document.getElementById('dataNascimento').value;
+    let cep = document.getElementById('cep').value;
+    let rua = document.getElementById('rua').value;
+    let numero = document.getElementById('numero').value;
+    let bairro = document.getElementById('bairro').value;
+    let cidade = document.getElementById('cidade').value;
+    let estado = document.getElementById('estado').value;
+    let celular = document.getElementById('celular').value;
+    let email = document.getElementById('email').value;
+    let identidade = document.getElementById('identidade').value;
 
-    if (!valid) {
+    if (nome == "" || cargo == "" || dataDeNascimento == "" || cep == "" || rua == ""
+        || numero == "" || bairro == "" || cidade == "" || estado == "" || celular == "" ||
+        email.length < 4 || identidade == "" || validacaoCPF() == false) {
         alert('Por favor, preencha todos os campos corretamente.');
-        return false;
     } else {
-        return true;
+        criarCandidato();
     }
 }
