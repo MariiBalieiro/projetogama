@@ -36,7 +36,7 @@
                 <i size=3x class="fas fa-user-edit fa-lg"></i>
             </div>
         </div>
-        <form>
+        <form method="POST" name="formulario">
             <fieldset>
                 <div class="container">
                     
@@ -410,7 +410,7 @@
             </div>
         </div>
 
-        <form>
+        <form method="POST" name="formulario">
             <fieldset>
                 <div class="docsForms">
                     <div id="bloco16">
@@ -448,9 +448,9 @@
         </form>
         
         <div class="button">
-        <button onclick="criarCandidato()" type="submit">Cadastrar</button>
+        <button type="submit" id="enviar" onclick="check_form(); return false;">Cadastrar</button>
         </div>
     </main>
 </body>
-<script type="text/javascript" src="./indexfront.js"></script>
+<script type="text/javascript" src="./backend/indexfront.js"></script>
 </html>
