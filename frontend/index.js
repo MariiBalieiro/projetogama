@@ -95,7 +95,7 @@ const Formulario = () => {
 }
 
 const criarCandidato = async (candidato) => {
-    const usuario = fetch('http://localhost:2800/registro', {
+    const usuario = fetch('https://pedantic-meitner-f3dac6.netlify.app/', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
