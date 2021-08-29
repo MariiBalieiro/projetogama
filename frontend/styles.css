@@ -1,0 +1,458 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+    
+}
+
+#logo {
+    margin-top: 5px;
+}
+
+
+header {
+    display: flex;
+    margin-left: 70px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 450px 400px;
+    margin-left: -100px;
+    gap: 80px;
+}
+
+header p {
+    font-size: 35px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+header ul {
+    display: flex;
+    margin-top: 55px;
+    margin-left: 50px;
+}
+
+header ul li {
+    padding: 10px;
+    font-size: 18px;
+}
+
+ul li {
+    list-style: none;
+    font-weight: 500;
+    
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #5988f1, #5b8af1, #5e8bf1, #608df0, #628ef0, #6590f1, #6792f1, #6a94f2, #6e97f4, #729af5, #769ef7, #7aa1f8);
+}
+
+
+#tituloDadosPessoais {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0px 250px 10px;
+}
+
+#pessoa {
+    margin-left: -242px;
+    margin-top: -10px;
+}
+
+#icone1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#documentos {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px 250px 10px;
+}
+
+#documento1 {
+    margin-left: -240px;
+    margin-top: 5px;
+}
+
+#icone2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+textarea:focus, input:focus, select:required:focus, option:focus {
+    outline: 0;
+    box-shadow: 1px 2px 0 gray;
+    border: 0;
+    background-color: #e6ecf8 ;
+}
+
+fieldset {
+    border: 0;
+    max-width: 1200px;
+}
+
+form {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: -8px;
+    border: 2px solid white;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 16px;
+    background-color: rgba(122, 163, 251, 0.9);
+    padding: 8px 0 12px 70px ;
+    box-shadow: 3px 4px 0 #4c78d6;
+
+}
+
+input:invalid {
+    color: gray;
+}
+
+input {
+    color: black;
+    border: 0.5px solid rgb(161, 159, 159);
+    border-radius: 3px 3px 3px 3px;
+    padding: 3px;
+    display: flex;
+}
+
+.dadosForms {
+    max-width: 1200px;
+}
+
+#bloco0 {
+    float: left;
+    width: 63%;
+}
+
+#bloco0 input {
+    width: 94%;
+}
+
+#bloco {
+    width: 30%;
+}
+
+#bloco1 input {
+    width: 27%;
+}
+
+#bloco2 {
+    float: left;
+    width: 35%;
+    margin-top: 4px;
+}
+
+#bloco2 input {
+    width: 90%;
+}
+
+#bloco3 {
+    float: left;
+    width: 28%;
+    margin-top: 4px;
+}
+
+#bloco3 select {
+    width: 91%;
+}
+
+#bloco4 {
+    width: 100%;
+    margin-top: 4px;
+}
+
+#bloco4 select {
+    width: 28%;
+}
+
+#bloco5 {
+    float: left;
+    width: 35%;
+    margin-top: 4px;
+}
+
+#bloco5 input {
+    width: 90%;
+}
+
+#bloco6 {
+    float: left; 
+    width: 10%;
+    margin-top: 4px;
+}
+
+#bloco6 input {
+    width: 69%;
+}
+
+#bloco7 {
+    float: left;
+    width: 28%;
+    margin-top: 4px;
+}
+
+#bloco7 input {
+    width: 97%;
+}
+
+#bloco8 {
+    float: left;
+    width: 20%;
+    margin-top: 4px;
+}
+
+#bloco8 input {
+    width: 83%;
+}
+
+#bloco9 {
+    float: left;
+    width: 18%;
+    margin-top: 4px;
+}
+
+#bloco9 input {
+    width: 81%;
+}
+
+#bloco10 {
+    float: left;
+    width: 28%;
+    margin-top: 4px;
+}
+
+#bloco10 input {
+    width: 86%;
+}
+
+#bloco11 {
+    float: left;
+    width: 25%;
+    margin-top: 4px;
+}
+
+#bloco11 select {
+    width: 90%;
+}
+
+#bloco12 {
+    float: left;
+    width: 20%;
+    margin-top: 4px;
+}
+
+#bloco12 select {
+    width: 92%;
+}
+
+#bloco13 {
+    float: left;
+    width: 40%; 
+    margin-top: 4px;
+}
+
+#bloco13 input {
+    width: 90%;
+}
+
+#bloco14 {
+    float: left;
+    width: 26%;
+    margin-top: 4px;
+}
+
+#bloco14 input {
+    width: 85%;
+}
+
+#bloco15 {
+    float: left;
+    width: 30%;
+    margin-top: 4px;
+}
+
+#bloco15 input {
+    width: 82%;
+}
+
+#bloco16 {
+    float: left;
+    width: 25%;
+    margin-top: 4px;
+}
+
+#bloco16 input {
+    width: 83%;
+}
+
+#bloco17 {
+    float: left;
+    width: 25%;
+    margin-top: 4px;
+}
+
+#bloco17 input {
+    width: 83%;
+}
+
+#bloco18 {
+    float: left;
+    width: 20%;
+    margin-top: 4px;
+}
+
+#bloco18 select {
+    width: 85%;
+}
+
+#bloco19 {
+    float: left;
+    width: 30%;
+    margin-top: 4px;
+}
+
+#bloco19 select {
+    width: 72%;
+}
+
+input select {
+    color: black;
+    border: 0 none;
+    border-radius: 3px 3px 3px 3px;
+}
+
+select {
+    color: black;
+    text-align: center;
+    border-radius: 3px 3px 3px 3px;
+    padding: 3px;
+    display: block;
+}
+
+select:invalid {
+    color: gray;
+}
+
+select option {
+    color: black;
+}
+
+.button {
+    text-align: center;
+    
+}
+
+.button:focus, .button::-moz-focus-inner {
+    outline:none;
+    border:none;
+}
+
+.button:active {
+    position:relative;
+    top:5px;
+    box-shadow:none;
+
+}
+
+button {
+    color: white;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 16px;
+    cursor: pointer;
+    background-color: rgba(122, 163, 251);
+    border: 2px solid white;
+    display:inline-block;
+    text-decoration: none;
+    box-shadow: 3px 4px 0 #4c78d6;
+    transition: 300ms;
+
+}
+
+button:hover{
+    background:#375492;
+    box-shadow: 3px 4px 0 #355497;
+}
+
+@media only screen and (max-width: 780px) {
+
+    form {
+        margin: 10px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    #logo {
+        align-items: center;
+    }
+    
+    
+    header {
+        display: block;
+        margin-left: 20px;
+    }
+
+    header p {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 60px;
+        text-align: center;
+        font-weight: 700;
+    
+    }
+    
+    header ul {
+        display: none;
+    }
+
+    #tituloDadosPessoais {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 20px 10px 0px;
+    }
+    
+    #pessoa {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    
+    #icone1 {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    #documentos {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 5px 10px 0px;
+    }
+    
+    #documento1 {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    #icone2 {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    button {
+        margin: 8px;
+    }
+}
