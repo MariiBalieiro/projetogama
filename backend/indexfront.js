@@ -65,7 +65,7 @@ const Formulario = () => {
 }
 
 const criarCandidato = async (candidato) => {
-    const usuario = fetch('https://pedantic-meitner-f3dac6.netlify.app/', {
+    const usuario = fetch('http://formulariojobsnet.herokuapp.com/', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
