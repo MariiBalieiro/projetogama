@@ -102,7 +102,7 @@ function check_form() {
 
     if (nome == "" || cargo == "" || dataDeNascimento == "" || cep == "" || rua == ""
         || numero == "" || bairro == "" || cidade == "" || estado == "" || celular == "" ||
-        email.length < 4 || identidade == "" || validacaoCPF() == false) {
+        email.length < 4 || identidade == "" ) {
         alert('Por favor, preencha todos os campos corretamente.');
     } else {
         criarCandidato();
