@@ -82,7 +82,7 @@ const criarCandidato = async (candidato) => {
     if (usuario.status === 500) {
         alert('Dados já cadastrados!')
     }
-    
+    location.reload();
 }
 
 function check_form() {
