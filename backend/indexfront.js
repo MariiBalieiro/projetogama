@@ -65,7 +65,7 @@ const Formulario = () => {
 }
 
 const criarCandidato = async (candidato) => {
-    const usuario = fetch('http://formulariojobsnet.herokuapp.com/', {
+    const usuario = fetch('https://formulariojobsnet.herokuapp.com/', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
