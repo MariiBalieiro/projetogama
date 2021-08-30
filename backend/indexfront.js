@@ -38,7 +38,7 @@ const pesquisarCep = async() => {
 document.getElementById('cep').addEventListener('focusout', pesquisarCep);
 
 const Formulario = () => {
-    let Formulario = {
+    let form = {
         nome: document.getElementById('nomeCompleto').value,
         cargo: document.getElementById('cargo').value,
         dataDeNascimento: document.getElementById('dataNascimento').value,
@@ -60,12 +60,12 @@ const Formulario = () => {
         veiculo: document.getElementById('veiculo').value,
         hbilitacao: document.getElementById('habilitacao').value,
     };
-    console.log(Formulario);
-    return Formulario
+    console.log(form);
+    return form
 }
 
 const criarCandidato = async (candidato) => {
-    const usuario = fetch('http://formulariojobsnet.herokuapp.com/registro', {
+    const usuario = await fetch('https://formulariojobsnet.herokuapp.com/registro', {
         method: "POST",
         headers: {
             'Accept': 'application/json',
